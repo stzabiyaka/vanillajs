@@ -1,0 +1,2 @@
+# vanillajs
+Vanilla JavaScript projects
