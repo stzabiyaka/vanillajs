@@ -1,0 +1,87 @@
+.panels {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  width: 90vw;
+  height: 90vh;
+
+  @media screen and (max-width: 480px) {
+    width: 98vw;
+    flex-direction: column;
+  }
+}
+
+.panels__item {
+  display: block;
+  position: relative;
+  flex: 0.5;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
+
+  color: hsla(191, 61%, 83%, 0.7);
+
+  transition: flex 0.7s ease-in;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 480px) {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  @each $image, $url in $images {
+    &:nth-child(#{$image}) {
+      background-image: url($url);
+    }
+  }
+
+  &.active {
+    flex: 5;
+  }
+}
+
+.panels__description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease-in 0.4s;
+
+  .panels__item.active & {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.panels__caption {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.panels__author {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.panels__link {
+  color: inherit;
+  font-family: inherit;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    color: hsla(191, 61%, 83%, 1);
+  }
+}

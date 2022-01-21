@@ -1,0 +1,25 @@
+.vanillaJS__link {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 2px;
+
+  z-index: 999;
+
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+
+  transition: color, background-color 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    color: hsla(0, 0%, 100%, 1);
+    background-color: transparent;
+  }
+}

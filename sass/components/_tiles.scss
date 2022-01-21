@@ -1,0 +1,39 @@
+.tiles {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1rem;
+  margin-left: -1rem;
+
+  color: #000;
+}
+
+.tiles__item {
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.tiles__link {
+  display: block;
+  padding: 5px;
+
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 4px;
+
+  color: inherit;
+  font-size: 2rem;
+
+  text-align: center;
+  text-decoration: none;
+
+  transition: color, background-color 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    color: hsla(0, 0%, 100%, 0.5);
+    background-color: transparent;
+  }
+}

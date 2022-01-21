@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+# VSCode files
+.vscode
+
+# Prettier file
+.prettierrc.json
+
+# project starter boilerplate folder
+_project_starter_
+
