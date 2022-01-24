@@ -211,7 +211,7 @@ body {
   background-color: transparent;
 }
 
-.container {
+.progress__container {
   text-align: center;
 }
 
@@ -241,12 +241,12 @@ body {
 
 .progress::before {
   width: 100%;
-  background-color: #808080;
+  background-color: gray;
 }
 
 .progress::after {
   width: var(--progressWidth);
-  background-color: #1e8334;
+  background-color: #1e8534;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -265,9 +265,9 @@ body {
   height: 50px;
   font-size: 2rem;
   font-weight: 700;
-  color: #808080;
+  color: gray;
   background-color: #000;
-  border: 3px solid #808080;
+  border: 3px solid gray;
   border-radius: 50%;
   -webkit-transition: color, border-color, background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: color, border-color, background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -276,7 +276,7 @@ body {
 .progress__item.active {
   color: #fff;
   border-color: transparent;
-  background-color: #1e8334;
+  background-color: #1e8534;
 }
 
 .btn {
@@ -285,7 +285,7 @@ body {
   font-family: inherit;
   font-size: 1rem;
   color: #000;
-  background-color: #1e8334;
+  background-color: #1e8534;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -301,7 +301,7 @@ body {
 }
 
 .btn:disabled {
-  background-color: #808080;
+  background-color: gray;
   cursor: not-allowed;
 }
 /*# sourceMappingURL=main.css.map */
