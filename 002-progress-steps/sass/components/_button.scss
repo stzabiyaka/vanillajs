@@ -1,0 +1,26 @@
+.btn {
+  margin: 5px;
+  padding: 8px 30px;
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  color: #000;
+  background-color: $colorActive;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(98%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $colorInactive;
+    cursor: not-allowed;
+  }
+}

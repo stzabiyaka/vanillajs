@@ -183,6 +183,125 @@ body {
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.vanillaJS__link {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 2px;
+  z-index: 999;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: color, background-color 0.3s ease-in;
+  transition: color, background-color 0.3s ease-in;
+}
+
+.vanillaJS__link:hover, .vanillaJS__link:focus {
+  color: white;
+  background-color: transparent;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress {
+  --progressWidth: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 90vw;
+}
+
+.progress::before, .progress::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 4px;
+  z-index: -1;
+}
+
+.progress::before {
+  width: 100%;
+  background-color: #808080;
+}
+
+.progress::after {
+  width: var(--progressWidth);
+  background-color: #1e8334;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.progress__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #808080;
+  background-color: #000;
+  border: 3px solid #808080;
+  border-radius: 50%;
+  -webkit-transition: color, border-color, background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color, border-color, background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.progress__item.active {
+  color: #fff;
+  border-color: transparent;
+  background-color: #1e8334;
+}
+
+.btn {
+  margin: 5px;
+  padding: 8px 30px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #000;
+  background-color: #1e8334;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:active {
+  -webkit-transform: scale(98%);
+          transform: scale(98%);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:disabled {
+  background-color: #808080;
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=main.css.map */

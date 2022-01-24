@@ -14,18 +14,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>My Project</title>
+    <title>Progress Seps</title>
   </head>
   <body>
-<!-- navigation -->
+    <!-- navigation -->
     <nav>
-      <a href="" class="vanillaJS__link" title="To all projects">SZ</a>
+      <a href="../index.html" class="vanillaJS__link" title="To all projects">SZ</a>
     </nav>
-    <h1>Project Starter</h1>
+    <div class="container">
+      <ul class="progress" id="progress">
+        <li class="progress__item active">1</li>
+        <li class="progress__item">2</li>
+        <li class="progress__item">3</li>
+        <li class="progress__item">4</li>
+      </ul>
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next">Next</button>
+    </div>
 
     <script src="./js/script.js"></script>
   </body>
